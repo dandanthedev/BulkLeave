@@ -29,13 +29,13 @@ In order to use BulkLeave, you will need to obtain your Discord token. Your Disc
 
 To obtain your Discord token, follow these steps:
 
-1. Log in to your Discord account in your web browser.
-2. Press `Ctrl`+`Shift`+`I` on your keyboard to open the developer tools.
-3. Click the "Application" tab in the developer tools.
-4. Click "Local Storage" in the left-hand menu.
-5. Click on the `discordapp.com` dropdown in the "Local Storage" section.
-6. Select the `token` key.
-7. Copy the value of the `token` key.
+
+   1. Open the browser console with F12 or Ctrl + Shift + I.
+   2. Go to the network tab
+   3. Filter by Fetch/XHR
+   4. Choose a request that isn't an error (if there aren't any, click on a channel or server to trigger some requests.)
+   5. You'll find your discord token under the request headers -> authorization section. Copy and paste it from there.
+
 
 Note that your Discord token changes frequently, so you may need to repeat these steps to obtain a new token.
 
